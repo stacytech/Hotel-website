@@ -16,6 +16,9 @@ body {
     font-family: "Poppins", sans-serif;
     background: #000;
     color: rgb(122,121,121);
+    overflow-x: hidden;
+    border-bottom: 3px solid pink;
+
 }
 .navbar {
   position: fixed;
@@ -332,8 +335,8 @@ h5{
 
 
 .overlay-text {
-  position: absolute; 
-  bottom: 499px; 
+  position: relative; 
+  bottom: 50px; 
   left: 26px;  
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
@@ -358,7 +361,7 @@ h5{
   max-width: 440px; 
   display: inline-block; 
   left: 10rem;
-  top: 25rem;
+  top: 23.1rem;
  
 }
 
@@ -394,4 +397,236 @@ h5{
   font-size: 0.7em; 
   font-weight: 500;
   margin: 0;
+}
+.image-container3 {
+  position: relative; 
+  max-width: 440px; 
+  display: inline-block; 
+  left: 10rem;
+  top: 23.1rem;
+ 
+}
+
+.image-container3 img {
+  width: 100%; 
+  height: 30rem;
+  position: relative;
+  bottom: 55rem;
+  left: 22rem;
+  display: block; 
+   border-radius: 3rem;
+}
+
+
+.overlay-text3 {
+  position: absolute; 
+  bottom: 899px; 
+  left: 375px;  
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.room-type3 {
+  font-size: 1.1em; 
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.price3 {
+  font-size: 0.7em; 
+  font-weight: 500;
+  margin: 0;
+}
+.image-container4 {
+  position: relative; 
+  max-width: 440px; 
+  display: inline-block; 
+  left: 0.3rem;
+  bottom: 62rem; 
+  
+
+}
+
+.image-container4 img {
+  width: 100%; 
+  height: 30rem;
+  position: relative;
+  display: block;
+  border-radius: 3rem;
+ 
+  
+}
+
+
+.overlay-text4 {
+  position: relative; 
+  bottom: 50px; 
+  left: 26px;  
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.room-type4 {
+  font-size: 1.1em; 
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.price4 {
+  font-size: 0.7em; 
+  font-weight: 500;
+  margin: 0;
+}
+
+#apartment{
+    text-align: center;
+    text-underline-offset: 20px;
+    background: rgba(139, 133, 133, 0.062);
+    height: 15rem;
+    width: 71rem;
+    right: 6.1rem;
+    position: relative;
+    bottom: 55rem;
+    border-radius: 2rem;
+}
+.our-apartment{
+    position: relative;
+    text-decoration: underline;
+    top: 3rem;
+}
+#myh5{
+    position: relative;
+    top: 6rem;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.apartment1{
+    position: relative;
+    top: 15rem;
+}
+
+#interior1{
+  position: relative; 
+  max-width: 440px; 
+  display: inline-block; 
+  left: 0rem;
+  top: 2rem; 
+  
+
+}
+
+#interior1 img {
+  width: 100%; 
+  height: 30rem;
+  position: relative;
+  display: block;
+  border-radius: 3rem;
+ 
+  
+}
+#interior2{
+  position: relative; 
+  max-width: 440px; 
+  display: inline-block; 
+  left: 2rem;
+  top: 2rem; 
+  
+
+}
+
+#interior2 img {
+  width: 100%; 
+  height: 30rem;
+  position: relative;
+  display: block;
+  border-radius: 3rem;
+ 
+  
+}
+
+#interior3{
+    position: relative;
+    top: 6rem;
+}
+.apartment-room1{
+    position: relative;
+    top: 10rem;
+}
+
+.apartment2{
+    position: relative;
+    top: 15rem;
+}
+
+#interior4{
+  position: relative; 
+  max-width: 440px; 
+  display: inline-block; 
+  left: 0rem;
+  top: 53rem;
+  
+
+}
+
+#interior4 img {
+  width: 100%; 
+  height: 30rem;
+  position: relative;
+  display: block;
+  border-radius: 3rem;
+ 
+  
+}
+#interior5{
+  position: relative; 
+  max-width: 440px; 
+  display: inline-block; 
+  left: 33rem;
+  top: 22.5rem; 
+  
+
+}
+
+#interior5 img {
+  width: 100%; 
+  height: 30rem;
+  position: relative;
+  display: block;
+  border-radius: 3rem;
+ 
+  
+}
+
+#interior6{
+    position: relative;
+    top: 26rem;
+    width: 250%; 
+    right: 5rem;
+}
+.apartment-room2{
+    position: relative;
+    top: 10rem;
+}
+.price6{
+    position: relative;
+    bottom: 0rem;
+}
+.apartment-room3{
+    position: relative;
+    top: 30rem;
+    left: 13rem;
+    
+}
+#myimg1{
+    position: relative;
+    top: 50rem;
+    width: 250%; 
+    right: 5rem;
 }
