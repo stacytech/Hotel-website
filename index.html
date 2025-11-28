@@ -1,6 +1,4 @@
-
-
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -17,8 +15,8 @@
 
     <ul class="nav-links" role="menubar">
       <li role="none"><a role="menuitem" href="#about">About</a></li>
-      <li role="none"><a role="menuitem" href="#rooms">Our Rooms</a></li>
-      <li role="none"><a role="menuitem" href="#apartment">Our Apartment</a></li>
+      <li role="none"><a role="menuitem" href="#rooms"> Rooms</a></li>
+      <li role="none"><a role="menuitem" href="#apartment"> Apartment</a></li>
       <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
     </ul>
 
@@ -172,6 +170,192 @@
     </div>
   </footer>
   
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 120
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StacyTech Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+
+  <nav id="desktop-nav" aria-label="Primary">
+    <div class="logo">stacyTech</div>
+
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a role="menuitem" href="#about">About</a></li>
+      <li role="none"><a role="menuitem" href="#rooms">Rooms</a></li>
+      <li role="none"><a role="menuitem" href="#apartment">Apartment</a></li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </button>
+  </nav>
+
+  <header class="hero" role="banner" aria-label="Hero">
+    <img class="hero-img" src="src/generated-image-1763754801640.png" alt="StacyTech Hotel and Apartment">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="zoom-in" data-aos-duration="900">
+      <h1 class="section-title">Welcome to StacyTech Hotel and Apartment</h1>
+      <p class="sub">Comfort • Style • Convenience</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-card welcome" id="welcome">
+      <h2 class="section-title" id="welcome2" data-aos="fade-up">Luxurious Hotel</h2>
+      <p style="color:rgb(180,180,180);margin-top:.5rem;" data-aos="fade-up" data-aos-delay="80">Experience exceptional comfort and service at StacyTech.</p>
+    </section>
+
+    <section class="section-card" id="about">
+      <div class="about-text" data-aos="fade-right">
+        <h2 class="section-title about-us">About Us</h2>
+        <p id="p1">Each one of our spacious rooms and shortlet apartments offers superior accommodation at reasonable prices. Located centrally and close to transport links, StacyTech is ideal for business and leisure.</p>
+      </div>
+
+      <div id="img1" class="about-image" data-aos="fade-left">
+        <img src="src/Front view of a luxu.png" alt="Hotel front view">
+      </div>
+    </section>
+
+    <section class="section-card" id="rooms">
+      <h2 class="section-title our-rooms" data-aos="fade-up">Our Rooms</h2>
+      <p style="color:rgb(180,180,180);margin-top:.5rem;" data-aos="fade-up" data-aos-delay="60">Well equipped rooms for your relaxation.</p>
+
+      <div class="rooms-container" aria-live="polite">
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="60">
+          <img src="src/ChatGPT Image Nov 22, 2025, 04_05_55 PM.png" alt="Deluxe Room">
+          <div class="card-content">
+            <p class="room-type">DELUXE ROOM</p>
+            <p class="price">₦345,500 Per Night</p>
+          </div>
+        </div>
+
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="120">
+          <img src="src/ChatGPT Image Nov 22, 2025, 04_09_53 PM.png" alt="Standard Room">
+          <div class="card-content">
+            <p class="room-type">STANDARD ROOM</p>
+            <p class="price">₦245,500 Per Night</p>
+          </div>
+        </div>
+
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="180">
+          <img src="src/generated-image-1763822208208.png" alt="Executive Room">
+          <div class="card-content">
+            <p class="room-type">EXECUTIVE ROOM</p>
+            <p class="price">₦225,000 Per Night</p>
+          </div>
+        </div>
+
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="240">
+          <img src="src/image.png" alt="Classic Room">
+          <div class="card-content">
+            <p class="room-type">CLASSIC ROOM</p>
+            <p class="price">₦205,000 Per Night</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card" id="apartment">
+      <h2 class="section-title our-apartment" data-aos="fade-up">Our Apartment</h2>
+      <p style="color:rgb(180,180,180);margin-top:.5rem;" data-aos="fade-up" data-aos-delay="60">Shortlet apartments perfectly equipped for your stay.</p>
+
+      <div class="apartments-grid">
+        <article class="apartment-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="apartment-gallery">
+            <img src="src/Alternative veranda .png" alt="Apartment 1 - image 1">
+            <img src="src/Interior view of a l 1.png" alt="Apartment 1 - image 2">
+            <img src="src/Interior view of a i 4.png" alt="Apartment 1 - image 3">
+            <img src="src/Interior view of a m.png" alt="Apartment 1 - image 4">
+          </div>
+          <div class="apartment-meta">
+            <h3 class="apartment-room1">stacyTech Diamond — 2-Bedroom</h3>
+            <p class="price5">₦400,000 Per Night</p>
+          </div>
+        </article>
+
+        <article class="apartment-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="apartment-gallery">
+            <img src="src/Interior view of a l.png" alt="Apartment 2 - image 1">
+            <img src="src/Front view of a luxu.png" alt="Apartment 2 - image 2">
+            <img src="src/Interior view of a i2.png" alt="Apartment 2 - image 3">
+            <img src="src/Interior view of a m 2.png" alt="Apartment 2 - image 4">
+          </div>
+          <div class="apartment-meta">
+            <h3 class="apartment-room3">stacyTech Gold-3-Bedroom</h3>
+            <p class="price6">₦500,000 Per Night</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-card">
+      <h2 class="section-title" data-aos="fade-up">Contact</h2>
+
+      <div class="contact-grid" style="margin-top:12px;">
+        <div class="contact-info" data-aos="fade-right">
+          <p style="color:rgb(200,200,200)">Have questions or want to book? Reach out to us.</p>
+          <ul style="color:rgb(200,200,200);margin-top:.5rem;list-style:none;padding:0;">
+            <li><strong>Address:</strong> 123 StacyTech Avenue, City</li>
+            <li><strong>Phone:</strong> +234 915 463 7238</li>
+            <li><strong>Email:</strong> successomede06@gmail.com</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post" novalidate data-aos="fade-left">
+          <input type="text" name="name" placeholder="Your name" required aria-label="Full name">
+          <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+          <textarea name="message" rows="5" placeholder="Your message" required aria-label="Message"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 stacyTech. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="http://www.tiktok.com/@stacytech" target="_blank" rel="noopener" aria-label="Visit our TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://x.com/stacy_tech0?s=21" target="_blank" rel="noopener" aria-label="Visit our Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/stacy_tech0/?__pwa=1" target="_blank" rel="noopener" aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="newsletter">
+        <p>Subscribe to our newsletter:</p>
+        <input type="email" placeholder="Enter your email" aria-label="Subscribe to newsletter">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
