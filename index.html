@@ -1,141 +1,188 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>StacyTech Hotel</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StacyTech Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
 <body>
-    <div class="general-container">
-        <div class="navbar">
-        <nav id="desktop-nav">
-            <div class="logo" data-aos="fade-up">stacyTech</div>
-            <ul class="nav-links">
-             <li class="list"><a href="#about">About</a></li>
-             <li class="list"><a href="#contact">Contact</a></li>
-             <li class="list"><a href="#rooms">Rooms</a></li>
-             <li class="list"><a href="#apartment">Apartments</a></li>
-            </ul>
-               <div class="hamburger" id="hamburger">
-                 <span class="top"></span>
-                 <span class="middle"></span>
-                 <span class="bottom"></span>
-                 </div>
- 
-</div>
-        </nav>
+
+  <nav id="desktop-nav" aria-label="Primary">
+    <div class="logo">stacyTech</div>
+
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a role="menuitem" href="#about">About</a></li>
+      <li role="none"><a role="menuitem" href="#rooms">Our Rooms</a></li>
+      <li role="none"><a role="menuitem" href="#apartment">Our Apartment</a></li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="bar top"></span>
+      <span class="bar middle"></span>
+      <span class="bar bottom"></span>
+    </button>
+  </nav>
+
+  <header class="hero" role="banner" aria-label="Hero">
+    <img class="hero-img" src="src/generated-image-1763754801640.png" alt="StacyTech Hotel and Apartment">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="zoom-in" data-aos-duration="900">
+      <h1 class="section-title">Welcome to StacyTech Hotel and Apartment</h1>
+      <p class="sub">Comfort • Style • Convenience</p>
     </div>
+  </header>
 
+  <main>
+    <section class="section-card welcome" id="welcome" >
+      <h2 class="section-title" id="welcome2" data-aos="fade-up">Luxurious Hotel</h2>
+      <p style="color:rgb(180,180,180);margin-top:.5rem;" data-aos="fade-up" data-aos-delay="80">Experience exceptional comfort and service at StacyTech.</p>
+    </section>
+
+    <section class="section-card" id="about">
+      <div class="about-text" data-aos="fade-right">
+        <h2 class="section-title about-us">About Us</h2>
+        <p id="p1">Each one of our spacious rooms and shortlet apartments offers superior accommodation at reasonable prices. Located centrally and close to transport links, StacyTech is ideal for business and leisure.</p>
+      </div>
+
+      <div id="img1" class="about-image" data-aos="fade-left">
+        <img src="src/Front view of a luxu.png" alt="Hotel front view">
+      </div>
+    </section>
+
+    <section class="section-card" id="rooms">
+      <h2 class="section-title our-rooms" data-aos="fade-up">Our Rooms</h2>
+      <p style="color:rgb(180,180,180);margin-top:.5rem;" data-aos="fade-up" data-aos-delay="60">Well equipped rooms for your relaxation.</p>
+
+      <div class="rooms-container" aria-live="polite">
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="60">
+          <img src="src/ChatGPT Image Nov 22, 2025, 04_05_55 PM.png" alt="Deluxe Room">
+          <div class="card-content">
+            <p class="room-type">DELUXE ROOM</p>
+            <p class="price">₦345,500 Per Night</p>
+          </div>
+        </div>
+
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="120">
+          <img src="src/ChatGPT Image Nov 22, 2025, 04_09_53 PM.png" alt="Standard Room">
+          <div class="card-content">
+            <p class="room-type">STANDARD ROOM</p>
+            <p class="price">₦245,500 Per Night</p>
+          </div>
+        </div>
+
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="180">
+          <img src="src/generated-image-1763822208208.png" alt="Executive Room">
+          <div class="card-content">
+            <p class="room-type">EXECUTIVE ROOM</p>
+            <p class="price">₦225,000 Per Night</p>
+          </div>
+        </div>
+
+        <div class="rooms-card" data-aos="fade-up" data-aos-delay="240">
+          <img src="src/image.png" alt="Classic Room">
+          <div class="card-content">
+            <p class="room-type">CLASSIC ROOM</p>
+            <p class="price">₦205,000 Per Night</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card" id="apartment">
+      <h2 class="section-title our-apartment" data-aos="fade-up">Our Apartment</h2>
+      <p style="color:rgb(180,180,180);margin-top:.5rem;" data-aos="fade-up" data-aos-delay="60">Shortlet apartments perfectly equipped for your stay.</p>
+
+      <div class="apartments-grid">
+        <article class="apartment-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="apartment-gallery">
+            <img src="src/Alternative veranda .png" alt="Apartment 1 - image 1">
+            <img src="src/Interior view of a l 1.png" alt="Apartment 1 - image 2">
+            <img src="src/Interior view of a i 4.png" alt="Apartment 1 - image 3">
+            <img src="src/Interior view of a m.png" alt="Apartment 1 - image 4">
+          </div>
+          <div class="apartment-meta">
+            <h3 class="apartment-room1">stacyTech Diamond — 2-Bedroom</h3>
+            <p class="price5">₦400,000 Per Night</p>
+          </div>
+        </article>
+
+        <article class="apartment-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="apartment-gallery">
+            <img src="src/Interior view of a l.png" alt="Apartment 2 - image 1">
+            <img src="src/Front view of a luxu.png" alt="Apartment 2 - image 2">
+            <img src="src/Interior view of a i2.png" alt="Apartment 2 - image 3">
+            <img src="src/Interior view of a m 2.png" alt="Apartment 2 - image 4">
+          </div>
+          <div class="apartment-meta">
+            <h3 class="apartment-room3">stacyTech Gold — 3-Bedroom</h3>
+            <p class="price6">₦400,000 Per Night</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-card">
+      <h2 class="section-title" data-aos="fade-up">Contact</h2>
+
+      <div class="contact-grid" style="margin-top:12px;">
+        <div class="contact-info" data-aos="fade-right">
+          <p style="color:rgb(200,200,200)">Have questions or want to book? Reach out to us.</p>
+          <ul style="color:rgb(200,200,200);margin-top:.5rem">
+            <li><strong>Address:</strong> 123 StacyTech Avenue, City</li>
+            <li><strong>Phone:</strong> +234 915 463 7238</li>
+            <li><strong>Email:</strong> successomede06@gmail.com</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post" novalidate data-aos="fade-left">
+          <label class="sr-only">Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label class="sr-only">Email<input type="email" name="email" placeholder="Your email" required></label>
+          <label class="sr-only">Message<textarea name="message" rows="5" placeholder="Your message" required></textarea></label>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 stacyTech. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+       <div class="social-media">
+    <a href="http://www.tiktok.com/@stacytech" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://x.com/stacy_tech0?s=21" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/stacy_tech0/?__pwa=1" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+        <div class="newsletter">
+            <p>Subscribe to our newsletter:</p>
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+        </div>
+    </div>
+  </footer>
   
-    <header class="hero" role="banner" aria-label="Hero image">
-        <img class="hero-img" src="src/generated-image-1763754801640.png" alt="StacyTech Hotel and Apartment">
-        <div class="hero-overlay" data-aos="fade-in"></div>
-        <div class="hero-content">
-            <h1>Welcome to StacyTech Hotel and Apartment</h1>
-            <p class="sub">Comfort • Style • Convenience</p>
-        </div>
-    </header>
 
-    <main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 120
+    });
+  </script>
 
-        <div class="welcome" data-aos="zoom-in">
-            <h1 id="welcome2">Luxurious Hotel Experience</h1>
-        </div>
-        <div id="img1" data-aos="fade-in">
-              <img  src="src/Front view of a luxu.png" alt="" height="300vh" width="350vw" >
-        </div>
-        <div id="about" data-aos="fade-in" onclick="location.href='./#about'">
-           
-            <h1 class="about-us" >About Us</h1>
-          
-            <p id="p1" >Each one of our spacious rooms and  Shortlet <br> Apartments offers superior  level  accommodation <br> at reasonable prices. Located in the  
-                center of the metro <br> area, our hotel is 5km away from the Benin  Airport. <br> This stylish modern property is exactly what 
-                you <br> need for a relaxing holiday or comfortable business trip. </p>  
-                
-        </div>
-
-        <div class="img1" >
-             <img id="img2" src="src/Realistic front view.png" alt="" height="400vh" width="450vw"data-aos="fade-up" >
-             <img id="img3" src="src/Realistic back view .png" alt=""height="400vh" width="450vw" data-aos="zoom-in">
-        </div>
-        
-
-        <div id="rooms" data-aos="zoom-in" >
-              <h1 class="our-rooms" onclick="location.href='./#rooms'">Our Rooms</h1>
-              <h5>Our Rooms Are Well Equipped For Your Relaxation</h5>
-              <a href="learnmore.html">
-              <button id="btn">Learn More</button>
-              </a>
-        </div>
-
- 
-   
-    <div class="image-container" data-aos="zoom-out">
-  <img src="src/ChatGPT Image Nov 22, 2025, 04_05_55 PM.png" alt="Deluxe Room" >
-  <div class="overlay-text">
-    <p class="room-type">DELUXE ROOM</p>
-    <p class="price">₦345,500 Per Night</p>
-  </div>
-    <div class="image-container2" >
-  <img src="src/ChatGPT Image Nov 22, 2025, 04_09_53 PM.png" alt="standard Room" >
-  <div class="overlay-text2">
-    <p class="room-type2">STANDARD ROOM</p>
-    <p class="price2">₦245,500 Per Night</p>
-  </div>
-</div>
-    <div class="image-container3" >
-  <img src="src/generated-image-1763822208208.png" alt="executive Room" >
-  <div class="overlay-text3">
-    <p class="room-type3">EXECUTIVE ROOM</p>
-    <p class="price3">₦225,000 Per Night</p>
-  </div>
-</div>
-    <div class="image-container4" data-aos="zoom-out">
-  <img src="src/image.png" alt="classic Room" >
-  <div class="overlay-text4">
-    <p class="room-type4">CLASSIC ROOM</p>
-    <p class="price4">₦205,000 Per Night</p>
-  </div>
-</div>
-
- <div id="apartment" data-aos="zoom-out" >
-              <h1 class="our-apartment" onclick="location.href='./#apartment'">Our Apartments</h1>
-              <h5 id="myh5">Our Shortlet Apartments are perfectly Equipped For Your Relaxation</h5>
-               <div class="apartment1" data-aos="zoom-in">
-  <img src="src/Alternative veranda .png" alt="apartment1" >
-  <img id="interior1" src="src/Interior view of a l 1.png" alt="apartment1" >
-  <img id="interior2" src="src/Interior view of a i 4.png" alt="apartment2" >
-  <img id="interior3" src="src/Interior view of a m.png" alt="apartment3" >
-
-   <h1 class="apartment-room1">stacyTech Diamond <br>2-Bedroom Apartment</p>
-      <p class="price5">₦400,000 Per Night</p>
-
-  
-</div>
-
-        </div>
-
-        <div class="apartment2" data-aos="zoom-in">
-  <img id="myimg1" src="src/Interior view of a l.png" alt="apartment3" >
-  <img id="interior4" src="src/Front view of a luxu.png" alt="apartment4" >
-  <img id="interior5" src="src/Interior view of a i2.png" alt="apartment5" >
-  <img id="interior6" src="src/Interior view of a m 2.png" alt="apartment6" >
-
-   <h1 class="apartment-room3">stacyTech Gold <br> 3-Bedroom Apartment</p>
-      <p class="price6">₦400,000 Per Night</p>
-</div>     
-    </main>
-
-   <script src="script.js"></script>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
